@@ -1,3 +1,5 @@
+
+
 const slider = document.querySelector("#slider");
 let sliderSection = document.querySelectorAll(".slider__section");
 let sliderSectionLast = sliderSection[sliderSection.length -1];
@@ -41,3 +43,12 @@ btnLeft.addEventListener('click',function(){
 setInterval(function(){
     Next();
 }, 5000);
+
+
+document.querySelector('.next').addEventListener('click', () => {
+    document.querySelector('.carousel').scrollBy({ left: 300, behavior: 'smooth' });
+});
+
+document.querySelector('.prev').addEventListener('click', () => {
+    document.querySelector('.carousel').scrollBy({ left: -300, behavior: 'smooth' });
+});
