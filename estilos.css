@@ -74,6 +74,7 @@ nav .nav-links {
 
 nav .nav-links li {
     list-style: none;
+    position: relative;
 }
 
 nav .nav-links a {
@@ -98,6 +99,37 @@ nav ul li a.active {
     color: #ffffff;
     background-color: #77816c48;
 }
+
+/* Estilos para el submenú */
+.sub-menu {
+    display: none; 
+    position: absolute; 
+    background-color: #3d4337;
+    padding: 7px; 
+    z-index: 100; 
+    margin-top: 7px; 
+}
+
+.nav-links li:hover .sub-menu {
+    display: block; 
+}
+
+.sub-menu li {
+    width: 200px; 
+}
+
+.sub-menu li a {
+    padding: 25px;
+    display: block; 
+    color: #ffffff; 
+    text-decoration: none; 
+}
+
+.sub-menu li a:hover {
+    background-color: #77816cec; 
+}
+
+/*___________*/
 
 #toogle {
     position: absolute;
@@ -450,7 +482,7 @@ button.next:hover {
     font-size: 0.8rem;
 }
 
-/* Media Queries para Responsividad */
+/* Responsive design para móviles */
 @media (max-width: 1200px) {
     .menu-footer {
         grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas más pequeñas */
@@ -458,6 +490,40 @@ button.next:hover {
 }
 
 @media (max-width: 768px) {
+    nav.logo {
+        float: none;
+        width: auto;
+        justify-content: center;
+    }
+
+    nav .nav-links {
+        float: none;
+        position: fixed;
+        z-index: 9;
+        left: 0;
+        right: 0;
+        top: 100px;
+        bottom: 100%;
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: rgba(0, 0, 0, 0.8);
+        overflow: hidden;
+        transition: all .5s ease-in-out;
+    }
+
+    nav .nav-links a {
+        font-size: 20px;
+    }
+
+    nav :checked~.nav-links {
+        bottom: 0;
+    }
+
+    nav .icon-bars {
+        display: block;
+    }
     .menu-footer {
         grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
     }

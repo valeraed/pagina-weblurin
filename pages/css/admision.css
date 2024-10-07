@@ -82,7 +82,36 @@ nav ul li a.active {
     color: #ffffff;
     background-color: #77816c48;
 }
+/* Estilos para el submenú */
+.sub-menu {
+    display: none; 
+    position: absolute; 
+    background-color: #3d4337;
+    padding: 7px; 
+    z-index: 100; 
+    margin-top: 7px; 
+}
 
+.nav-links li:hover .sub-menu {
+    display: block; 
+}
+
+.sub-menu li {
+    width: 200px; 
+}
+
+.sub-menu li a {
+    padding: 25px;
+    display: block; 
+    color: #ffffff; 
+    text-decoration: none; 
+}
+
+.sub-menu li a:hover {
+    background-color: #77816cec; 
+}
+
+/*___________*/
 #toogle {
     position: absolute;
     top: -100px;
