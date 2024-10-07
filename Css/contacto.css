@@ -142,7 +142,7 @@ section{
     opacity: 0.5;
     filter: blur(1px);
 }
-.contact-info{
+.contact-infonot{
     position: absolute;
     z-index: 1;
     display: flex;
@@ -161,6 +161,112 @@ section{
     margin-left:10px;
     height: auto;
     filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.7));
+}
+/* footer */
+.footer {
+    background-color: #3d4337;
+    color: #ffffff;
+    padding: 2rem 1rem; /* Añadido padding para espacio */
+}
+.footer p{
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+.contact-info li {
+    display: flex; 
+    align-items: center; 
+}
+
+.contact-info li i {
+    margin-right: 10px; 
+    color: #ffffff; 
+}
+
+.container-footer {
+    max-width: 1200px; /* Puedes ajustar el ancho según sea necesario */
+    margin: 0 auto; /* Centrar el contenido */
+}
+
+.menu-footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Asegúrate de que esto esté en su lugar */
+    gap: 2rem; /* Espacio entre columnas */
+    margin-bottom: 20px;
+}
+.menu-footer ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.menu-footer li {
+    color: #ffffff; 
+    margin-bottom: 0.5rem; 
+}
+
+.menu-footer a {
+    color: #ffffff; 
+    text-decoration: none; 
+}
+
+.menu-footer a:hover {
+    text-decoration: underline;
+}
+
+.title-footer {
+    font-weight: 300;
+    font-size: 1.2rem;
+    text-transform: none;
+    padding: 20px;
+    text-align: center;
+}
+.social-icons{
+    text-align: center;
+    justify-content: center;
+    gap:1rem;
+}
+.social-icons a{
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+    transition: color 0,3s ease;
+}
+.social-icons a:hover{
+    text-decoration: none;
+}
+.facebook:hover {
+    color: #3b5998;
+    text-shadow: 0 0 5px #1f3055;
+}
+
+.twitter:hover {
+    color: #1DA1F2;
+    text-shadow: 0 0 5px #0c4466;
+}
+
+.youtube:hover {
+    color: #FF0000;
+    text-shadow: 0 0 5px #660a0a;
+}
+
+.tiktok:hover {
+    color: #0e1213;
+    text-shadow: 0 0 5px white;
+}
+
+.instagram:hover {
+    color: #C13584;
+    text-shadow: 0 0 5px #5c103b;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 1rem; 
+}
+
+.copyright p {
+    font-size: 0.8rem;
 }
 
 /* Responsive design para móviles */

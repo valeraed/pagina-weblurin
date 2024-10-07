@@ -6,27 +6,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="/img/logolurin.ico">
     <title>Instituto Lurín</title>
 </head>
 
 <body>
     <header>
         <nav class="navbar">
+            <input type="checkbox" id="toogle">
             <div class="logo">
                 <a href="#">
                     <img src="img/logolurin.png" alt="Logo">
                 </a>
             </div>
             <ul class="nav-links">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Nosotros</a></li>
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="pages/nosotros.html">Nosotros</a></li>
                 <li><a href="#carrera">Carreras</a></li>
-                <li><a href="#">Admisión</a></li>
-                <li><a href="#">Noticias</a></li>
-                <li><a href="#">Contáctanos</a></li>
-                <li><a href="#">Biblioteca Virtual</a></li>
-                <li><a href="#">Intranet</a></li>
+                <li><a href="pages/admision.html">Admisión</a></li>
+                <li><a href="pages/noticias.html">Noticias</a></li>
+                <li><a href="pages/contacto.html">Contáctanos</a></li>
+                <li><a href="https://centroderecursosies.drelm.gob.pe" target="_blank">Biblioteca Virtual</a></li>
+                <li><a href="https://iestplurin.jedu.pe" target="_blank">Intranet</a></li>
             </ul>
+            <label for="toogle" class="icon-bars">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>
         </nav>
     </header>
     <section>
@@ -102,35 +110,35 @@
                 <div class="carousel">
                     <a href="#" class="noticia">
                         <div class="fecha">
-                            <span class="dia">09</span>
+                            <span class="dia">18</span>
                             <span class="mes">SET</span>
                         </div>
                         <img src="img/018.png" alt="Noticia 1">
-                        <p>Noticia 1</p>
+                        <p>Semana Deportiva</p>
                     </a>
                     <a href="#" class="noticia">
                         <div class="fecha">
                             <span class="dia">16</span>
-                            <span class="mes">AGO</span>
+                            <span class="mes">SET</span>
                         </div>
                         <img src="img/026.png" alt="Noticia 2">
-                        <p>Noticia 2</p>
+                        <p>Aniversario</p>
                     </a>
                     <a href="#" class="noticia">
                         <div class="fecha">
-                            <span class="dia">20</span>
-                            <span class="mes">JUL</span>
+                            <span class="dia">15</span>
+                            <span class="mes">MAR</span>
                         </div>
                         <img src="img/015.png" alt="Noticia 3">
-                        <p>Noticia 3</p>
+                        <p>Exámen de Admisión</p>
                     </a>
                     <a href="#" class="noticia">
                         <div class="fecha">
-                            <span class="dia">28</span>
-                            <span class="mes">JUN</span>
+                            <span class="dia">13</span>
+                            <span class="mes">MAR</span>
                         </div>
                         <img src="img/017.png" alt="Noticia 3">
-                        <p>Noticia 4</p>
+                        <p>Exámen de Admisión</p>
                     </a>
                 </div>
                 <div class="carousel-nav">
@@ -139,43 +147,26 @@
                 </div>
             </div>
         </div>
-        
+
     </section>
 
     <footer class="footer">
-        <div class="container container-footer">
+        <div class="container-footer">
             <div class="menu-footer">
                 <div class="contact-info">
                     <p class="title-footer">Instituto Lurín</p>
-                    <p>Nuestro objetivo fundamental es formar profesionales en los tres programas de estudios que
-                        brindamos CONTABILIDAD, DISEÑO Y PROGRAMACIÓN WEB y PRÓTESIS DENTAL, con una sólida base
-                        científica y tecnológica, un alto nivel de especialización.</p>
-                    <div class="social-icons">
-                        <span class="facebook">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </span>
-                        <span class="twitter">
-                            <i class="fa-brands fa-twitter"></i>
-                        </span>
-                        <span class="youtube">
-                            <i class="fa-brands fa-youtube"></i>
-                        </span>
-                        <span class="pinterest">
-                            <i class="fa-brands fa-pinterest-p"></i>
-                        </span>
-                        <span class="instagram">
-                            <i class="fa-brands fa-instagram"></i>
-                        </span>
-                    </div>
+                    <p>Nuestro objetivo es formar profesionales en PRÓTESIS DENTAL, CONTABILIDAD y DISEÑO Y DESARROLLO
+                        WEB, con una sólida base científica y tecnológica.</p>
+
                 </div>
 
                 <div class="enlace">
                     <p class="title-footer">Enlaces Útiles</p>
                     <ul>
-                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="pages/nosotros.html">Nosotros</a></li>
                         <li><a href="#">Carreras</a></li>
-                        <li><a href="#">Admisión</a></li>
-                        <li><a href="#">Noticias</a></li>
+                        <li><a href="pages/admision.html">Admisión</a></li>
+                        <li><a href="pages/noticias.html">Noticias</a></li>
                     </ul>
                 </div>
 
@@ -183,25 +174,51 @@
                     <p class="title-footer">Contacto</p>
                     <ul>
                         <li>
-                            Dirección: A.H. Villa Alejandro 1ra Etapa - Mz. K, Lt. 15/16, Lurín
+                            <i class="fas fa-map-marker-alt"></i> Dirección: A.H. Villa Alejandro 1ra Etapa - Mz. K, Lt.
+                            15/16, Lurín
                         </li>
-                        <li>Celular : 99999999</li>
-                        <li>Email: lurin@gmail.com</li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i> Celular: 927 307 352
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i> Email: informes@iestplurin.edu.pe
+                        </li>
                     </ul>
                 </div>
 
                 <div class="seguir">
                     <p class="title-footer">Síguenos</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/iestplurinOFICIAL/?locale=es_LA" target="_blank"
+                            class="facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" class="twitter">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@IntitutoLurin" target="_blank" class="youtube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@instituto_lurin?is_from_webapp=1&sender_device=pc"
+                            target="_blank" class="tiktok">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank" class="instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
                 </div>
+
+
             </div>
             <hr>
             <div class="copyright">
-                <p>
-                    &copy; 2024 Instituto Lurín. Todos los derechos reservados.
-                </p>
+                <p>&copy; 2024 Instituto Lurín. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
+
+
 
     <script src="slider.js"></script>
 </body>
