@@ -1,167 +1,118 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/noticias.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" href="../img/logolurin.ico">
     <title>Noticias</title>
 </head>
-
 <body>
     <header>
+        <div>
+            <a href="#" class="logo">
+                <img src="../img/logolurin.png" alt="Logo"> IESTP Lurín
+            </a>
+        </div>
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar" class="menu-icon">&#9776;</label>
         <nav class="navbar">
-            <input type="checkbox" id="toogle">
-            <div class="logo">
-                <a href="#">
-                    <img src="../img/logolurin.png" alt="Logo">
-                </a>
-            </div>
-            <ul class="nav-links">
+            <ul>
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
                 <li><a href="#carrera">Carreras</a>
-                    <ul class="sub-menu">
-                        <li><a href="../pages/diseñoweb.html">Diseño y Desarrollo Web</a></li>
-                        <li><a href="../pages/protesis.html">Prótesis Dental</a></li>
+                    <ul>
+                        <li><a href="#">Diseño y Programación Web</a></li>
+                        <li><a href="#">Prótesis Dental</a></li>
                         <li><a href="#">Contabilidad</a></li>
                     </ul>
                 </li>
                 <li><a href="admision.html">Admisión</a></li>
                 <li><a href="noticias.html" class="active">Noticias</a></li>
-                <li><a href="contacto.html">Contáctanos</a></li>
+                <li><a href="/pages/contacto.html">Contáctanos</a></li>
                 <li><a href="https://centroderecursosies.drelm.gob.pe" target="_blank">Biblioteca Virtual</a></li>
                 <li><a href="https://iestplurin.jedu.pe" target="_blank">Intranet</a></li>
             </ul>
-            <label for="toogle" class="icon-bars">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </label>
+
         </nav>
     </header>
-
-    <section>
-        <div class="container-fondo">
-            <div class="fondo-contacto" id="fondo-contacto">
-                <img src="../img/img-secundarias/noticias.jpg" alt="" class="fondo-contacto__img">
-            </div>
-            <div class="contact-infonot">
-                <img src="../img/logolurin.png" alt="Logo" class="contact-logo">
-                <h2 class="contact-title">NOTICIAS</h2>
-            </div>
-        </div>
-    </section>
-    <section id="ultimas-noticias">
+    <section id="seccion-noticias-cronologico" class="section1">
         <h1>Últimas Noticias</h1>
-    </section>
-
-    <section id="seccion-noticias-cronologico">
         <div class="noticia-cronologica">
             <img src="../img/img-secundarias/004.png" alt="Semana Deportiva">
             <h2>Semana Deportiva</h2>
             <p class="fecha-noticia">18 de Septiembre de 2024</p>
             <p>Del 09 al 13 de setiembre se llevó a cabo la Semana Deportiva del instituto, con diversas actividades y competencias para fomentar el deporte y la vida saludable entre nuestros estudiantes</p>
-            <a href="link-a-la-noticia-completa.html">Leer más</a>
+            <a href="#">Leer más</a>
         </div>
         <div class="noticia-cronologica">
             <img src="../img/img-secundarias/011.jpg" alt="Equipo de Voley Femenino">
             <h2>Equipo representativo de voleibol femenino</h2>
             <p class="fecha-noticia">16 de Septiembre de 2024</p>
             <p>Nuestro equipo de vóley femenino se consagró campeón del torneo interuniversitario, demostrando su talento y dedicación en cada partido. ¡Felicitaciones a nuestras deportistas por este gran logro!</p>
-            <a href="link-a-la-noticia-completa.html">Leer más</a>
+            <a href="#">Leer más</a>
         </div>
         <div class="noticia-cronologica">
             <img src="../img/017.png" alt="Exámen de Admisión 2024">
             <h2>Exámen de Admisión 2024</h2>
             <p class="fecha-noticia">15 de Marzo de 2024</p>
             <p>Un grupo destacado de estudiantes rindió su examen de admisión para el ciclo 2024, demostrando su preparación y esfuerzo por formar parte de nuestra prestigiosa institución.</p>
-            <a href="link-a-la-noticia-completa.html">Leer más</a>
+            <a href="#">Leer más</a>
         </div>
         <div class="noticia-cronologica">
             <img src="../img/015.png" alt="Admisión 2024">
             <h2>Admisión 2024</h2>
             <p class="fecha-noticia">13 de Marzo de 2024</p>
             <p>Muchos estudiantes están dedicando tiempo y esfuerzo en su preparación para el próximo Examen de Admisión 2024.</p>
-            <a href="link-a-la-noticia-completa.html">Leer más</a>
+            <a href="#">Leer más</a>
         </div>
     </section>
     
+ 
 
-
-
-    <footer class="footer">
-        <div class="container-footer">
-            <div class="menu-footer">
-                <div class="contact-info">
-                    <p class="title-footer">Instituto Lurín</p>
-                    <p>Nuestro objetivo es formar profesionales en PRÓTESIS DENTAL, CONTABILIDAD y DISEÑO Y DESARROLLO
-                        WEB, con una sólida base científica y tecnológica.</p>
-
-                </div>
-
-                <div class="enlace">
-                    <p class="title-footer">Enlaces Útiles</p>
-                    <ul>
-                        <li><a href="/pages/nosotros.html">Nosotros</a></li>
-                        <li><a href="#">Carreras</a></li>
-                        <li><a href="/pages/admision.html">Admisión</a></li>
-                        <li><a href="/pages/noticias.html">Noticias</a></li>
-                    </ul>
-                </div>
-
-                <div class="contact-info">
-                    <p class="title-footer">Contacto</p>
-                    <ul>
-                        <li>
-                            <i class="fas fa-map-marker-alt"></i> Dirección: A.H. Villa Alejandro 1ra Etapa - Mz. K, Lt.
-                            15/16, Lurín
-                        </li>
-                        <li>
-                            <i class="fas fa-phone-alt"></i> Celular: +51 946 024 312
-                        </li>
-                        <li>
-                            <i class="fas fa-envelope"></i> Email: informes@iestplurin.edu.pe
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="seguir">
-                    <p class="title-footer">Síguenos</p>
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com/iestplurinOFICIAL/?locale=es_LA" target="_blank"
-                            class="facebook">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </a>
-                        <a href="https://twitter.com" target="_blank" class="twitter">
-                            <i class="fa-brands fa-twitter"></i>
-                        </a>
-                        <a href="https://www.youtube.com/@IntitutoLurin" target="_blank" class="youtube">
-                            <i class="fa-brands fa-youtube"></i>
-                        </a>
-                        <a href="https://www.tiktok.com/@instituto_lurin?is_from_webapp=1&sender_device=pc"
-                            target="_blank" class="tiktok">
-                            <i class="fa-brands fa-tiktok"></i>
-                        </a>
-                        <a href="https://www.instagram.com" target="_blank" class="instagram">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                    </div>
-                </div>
-
-
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <h2>IESTP LURÍN</h2>
+                <p>Nuestro objetivo es formar profesionales en:</p>
+                <p> PRÓTESIS DENTAL, CONTABILIDAD y DISEÑO Y DESARROLLO WEB, con una sólida base científica y
+                    tecnológica.</p>
             </div>
-            <hr>
-            <div class="copyright">
-                <p>&copy; 2024 Instituto Lurín. Todos los derechos reservados.</p>
+            <div class="box">
+                <h2>ENLACES ÚTILES</h2>
+                <p><a href="nosotros.html">Nosotros</a></p>
+                <p><a href="#">Carreras</a></p>
+                <p><a href="admision.html">Admisión</a></p>
+                <p><a href="noticias.html">Noticias</a></p>
+            </div>
+            <div class="box">
+                <h2>CONTACTO</h2>
+                <p>Dirección: A.H. Villa Alejandro 1ra Etapa - Mz. K, Lt.
+                    15/16, Lurín</p>
+                <p> Celular: +51 946 024 312</p>
+                <p> Email: informes@iestplurin.edu.pe</p>
+            </div>
+            <div class="box">
+                <h2>SÍGUENOS</h2>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/iestplurinOFICIAL/?locale=es_LA" target="_blank" class="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@IntitutoLurin" target="_blank" class="youtube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@instituto_lurin?is_from_webapp=1&sender_device=pc" target="_blank"
+                        class="tiktok">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </div>
             </div>
         </div>
+        <div class="grupo-2">
+            <small>&copy; 2024 <b>Instituto Lurín</b> - Todos los derechos reservados.</small>
+        </div>
     </footer>
-
-
+    
 </body>
-
 </html>

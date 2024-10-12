@@ -3,9 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" href="img/logolurin.ico">
     <title>Instituto Lurín</title>
@@ -13,39 +12,34 @@
 
 <body>
     <header>
+        <div>
+            <a href="index.html" class="logo">
+                <img src="img/logolurin.png" alt="Logo"> IESTP Lurín
+            </a>
+        </div>
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar" class="menu-icon">&#9776;</label>
         <nav class="navbar">
-            <input type="checkbox" id="toogle">
-            <div class="logo">
-                <a href="#">
-                    <img src="img/logolurin.png" alt="Logo">
-                </a>
-            </div>
-            <ul class="nav-links">
+            <ul>
                 <li><a href="index.html" class="active">Inicio</a></li>
                 <li><a href="pages/nosotros.html">Nosotros</a></li>
-                <li>
-                    <a href="#carrera">Carreras</a>
-                    <ul class="sub-menu">
-                        <li><a href="pages/diseñoweb.html">Diseño y Desarrollo Web</a></li>
-                        <li><a href="pages/protesis.html">Prótesis Dental</a></li>
-                        <li><a href="pages/contabilidad.html">Contabilidad</a></li>
+                <li><a href="#carrera">Carreras</a>
+                    <ul>
+                        <li><a href="#">Diseño y Programación Web</a></li>
+                        <li><a href="#">Prótesis Dental</a></li>
+                        <li><a href="#">Contabilidad</a></li>
                     </ul>
                 </li>
                 <li><a href="pages/admision.html">Admisión</a></li>
                 <li><a href="pages/noticias.html">Noticias</a></li>
-                <li><a href="pages/contacto.html">Contáctanos</a></li>
+                <li><a href="#">Contáctanos</a></li>
                 <li><a href="https://centroderecursosies.drelm.gob.pe" target="_blank">Biblioteca Virtual</a></li>
                 <li><a href="https://iestplurin.jedu.pe" target="_blank">Intranet</a></li>
             </ul>
-            <label for="toogle" class="icon-bars">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </label>
+
         </nav>
     </header>
-    
-    <section>
+    <section id="carrera" class="section1">
         <div class="container-slider">
             <div class="slider" id="slider">
                 <div class="slider__section">
@@ -65,52 +59,45 @@
             <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
         </div>
     </section>
-    <hr>
-    <section id="carrera" class="section1">
+    <section class="section2">
         <div class="titulo">
             <h1>NUESTRAS CARRERAS <img src="img/graduacion.png" class="icono"></h1>
         </div>
-        <div class="container">
+        <div class="card-container">
             <div class="card">
-                <figure>
-                    <img src="img/protesis.jpg">
-                </figure>
-                <div class="contenido">
+                <img src="img/diseñoweb.jpg">
+                <div class="card-content">
+                    <h3>Diseño y Programación Web</h3>
+                    <p>Domina las herramientas y lenguajes necesarios para crear sitios web dinámicos y funcionales.
+                        Aprende sobre diseño UX/UI, desarrollo frontend y backend, y conviértete en un experto en la
+                        construcción de experiencias digitales innovadoras</p>
+                    <a href="" class="card-button">Ver más</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/protesis.jpg">
+                <div class="card-content">
                     <h3>Prótesis Dental</h3>
                     <p>Te prepararemos para diseñar, fabricar y ajustar prótesis dentales que mejoren la salud bucal y
                         la estética de los pacientes. Aprenderás a trabajar con tecnología avanzada y materiales
                         especializados, garantizando un trabajo preciso y de alta calidad</p>
-                    <a href="pages/protesis.html">Ver más</a>
+                    <a href="" class="card-button">Ver más</a>
                 </div>
             </div>
             <div class="card">
-                <figure>
-                    <img src="img/diseñoweb.jpg">
-                </figure>
-                <div class="contenido">
-                    <h3>Diseño y Desarrollo web</h3>
-                    <p>Domina las herramientas y lenguajes necesarios para crear sitios web dinámicos y funcionales.
-                        Aprende sobre diseño UX/UI, desarrollo frontend y backend, y conviértete en un experto en la
-                        construcción de experiencias digitales innovadoras</p>
-                    <a href="pages/diseñoweb.html">Ver más</a>
-                </div>
-            </div>
-            <div class="card">
-                <figure>
-                    <img src="img/contabilidad.jpg">
-                </figure>
-                <div class="contenido">
+                <img src="img/contabilidad.jpg">
+                <div class="card-content">
                     <h3>Contabilidad</h3>
                     <p>Adquiere las habilidades necesarias para gestionar y analizar la información financiera de una
                         empresa. Esta carrera te preparará para desempeñarte en el mundo de los negocios, ofreciendo
                         asesoría financiera, auditorías y control de cuentas con precisión.</p>
-                    <a href="pages/contabilidad.html">Ver más</a>
+                    <a href="" class="card-button">Ver más</a>
                 </div>
             </div>
         </div>
     </section>
-    <hr>
-    <section class="section2">
+
+    <section class="section3">
         <div class="noticias-importantes">
             <h1>NOTICIAS IMPORTANTES <img src="img/altavoz.png" class="icono"> </h1>
             <div class="noticias-actuales">
@@ -158,78 +145,52 @@
 
     </section>
 
-    <footer class="footer">
-        <div class="container-footer">
-            <div class="menu-footer">
-                <div class="contact-info">
-                    <p class="title-footer">Instituto Lurín</p>
-                    <p>Nuestro objetivo es formar profesionales en PRÓTESIS DENTAL, CONTABILIDAD y DISEÑO Y DESARROLLO
-                        WEB, con una sólida base científica y tecnológica.</p>
-
-                </div>
-
-                <div class="enlace">
-                    <p class="title-footer">Enlaces Útiles</p>
-                    <ul>
-                        <li><a href="pages/nosotros.html">Nosotros</a></li>
-                        <li><a href="#">Carreras</a></li>
-                        <li><a href="pages/admision.html">Admisión</a></li>
-                        <li><a href="pages/noticias.html">Noticias</a></li>
-                    </ul>
-                </div>
-
-                <div class="contact-info">
-                    <p class="title-footer">Contacto</p>
-                    <ul>
-                        <li>
-                            <i class="fas fa-map-marker-alt"></i> Dirección: A.H. Villa Alejandro 1ra Etapa - Mz. K, Lt.
-                            15/16, Lurín
-                        </li>
-                        <li>
-                            <i class="fas fa-phone-alt"></i> Celular: +51 946 024 312
-
-                        </li>
-                        <li>
-                            <i class="fas fa-envelope"></i> Email: informes@iestplurin.edu.pe
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="seguir">
-                    <p class="title-footer">Síguenos</p>
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com/iestplurinOFICIAL/?locale=es_LA" target="_blank"
-                            class="facebook">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </a>
-                        <a href="https://twitter.com" target="_blank" class="twitter">
-                            <i class="fa-brands fa-twitter"></i>
-                        </a>
-                        <a href="https://www.youtube.com/@IntitutoLurin" target="_blank" class="youtube">
-                            <i class="fa-brands fa-youtube"></i>
-                        </a>
-                        <a href="https://www.tiktok.com/@instituto_lurin?is_from_webapp=1&sender_device=pc"
-                            target="_blank" class="tiktok">
-                            <i class="fa-brands fa-tiktok"></i>
-                        </a>
-                        <a href="https://www.instagram.com" target="_blank" class="instagram">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                    </div>
-                </div>
-
-
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <h2>IESTP LURÍN</h2>
+                <p>Nuestro objetivo es formar profesionales en:</p>
+                <p> PRÓTESIS DENTAL, CONTABILIDAD y DISEÑO Y DESARROLLO WEB, con una sólida base científica y
+                    tecnológica.</p>
             </div>
-            <hr>
-            <div class="copyright">
-                <p>&copy; 2024 Instituto Lurín. Todos los derechos reservados.</p>
+            <div class="box">
+                <h2>ENLACES ÚTILES</h2>
+                <p><a href="pages/nosotros.html">Nosotros</a></p>
+                <p><a href="#">Carreras</a></p>
+                <p><a href="#">Admisión</a></p>
+                <p><a href="pages/noticias.html">Noticias</a></p>
             </div>
+            <div class="box">
+                <h2>CONTACTO</h2>
+                <p>Dirección: A.H. Villa Alejandro 1ra Etapa - Mz. K, Lt.
+                    15/16, Lurín</p>
+                <p> Celular: +51 946 024 312</p>
+                <p> Email: informes@iestplurin.edu.pe</p>
+            </div>
+            <div class="box">
+                <h2>SÍGUENOS</h2>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/iestplurinOFICIAL/?locale=es_LA" target="_blank" class="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@IntitutoLurin" target="_blank" class="youtube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@instituto_lurin?is_from_webapp=1&sender_device=pc" target="_blank"
+                        class="tiktok">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2024 <b>Instituto Lurín</b> - Todos los derechos reservados.</small>
         </div>
     </footer>
 
 
+    <script src="script.js"></script>
 
-    <script src="slider.js"></script>
 </body>
 
 </html>
