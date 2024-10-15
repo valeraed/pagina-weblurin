@@ -184,7 +184,7 @@ header label {
 .portada{
     width: 100%; height: 100%;
     background: linear-gradient(#d2ee573d, rgba(0, 128, 0, 0.24)),
-    url("/img/img-secundarias/noticias.jpg");
+    url("../../img/img-secundarias/noticias.jpg");
     background-attachment: fixed;
     background-size: cover; 
     background-position: center;

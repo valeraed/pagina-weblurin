@@ -117,7 +117,7 @@ header label {
 .portada{
     width: 100%; height: 100%;
     background: linear-gradient(#d2ee5770, rgba(0, 128, 0, 0.3)), 
-    url("/img/img-secundarias/protesisdental.jpg");
+    url("../../img/img-secundarias/protesisdental.jpg");
     background-attachment: fixed;
     background-size: cover; 
     background-position: center; 
